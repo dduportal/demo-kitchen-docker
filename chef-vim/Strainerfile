@@ -1,0 +1,4 @@
+# Strainerfile
+knife test: knife cookbook test $COOKBOOK
+foodcritic: foodcritic $SANDBOX/$COOKBOOK
+chefspec:   rspec --color

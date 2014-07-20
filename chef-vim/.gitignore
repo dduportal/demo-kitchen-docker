@@ -1,0 +1,16 @@
+.vagrant
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+/cookbooks
+.DS_Store
+
+# Bundler
+bin/*
+.bundle/*
+.cookbooks
+.kitchen
+tmp

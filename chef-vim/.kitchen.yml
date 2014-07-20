@@ -1,0 +1,20 @@
+---
+driver:
+  name: docker
+  binary: /usr/local/bin/docker
+  socket: tcp://10.0.2.15:2375
+  require_chef_omnibus: false
+
+provisioner:
+  name: chef_solo
+
+platforms:
+- name: centos-7
+  driver_config:
+    dockerfile: /vagrant/dockerfiles/centos7-img/Dockerfile
+
+suites:
+  - name: default
+    run_list:
+      - recipe[vim::default]
+    attributes:

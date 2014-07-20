@@ -1,0 +1,7 @@
+DEPENDENCIES
+  vim
+    path: .
+    metadata: true
+
+GRAPH
+  vim (0.1.0)
